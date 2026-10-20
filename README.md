@@ -15,7 +15,7 @@ This is a framework-free static site. Import `abhijithaj08-code/Zenin_Portfolio`
 
 ## Media
 
-The profile, hero, cursor, Photoshop work, and After Effects videos are delivered from Cloudinary with automatic quality optimization. The sunset and sea banner images are included as optimized local copies because their original uploads exceeded Cloudinary's image limit. The Breaking Bad video is referenced by the Cloudinary public ID `abhijith-breaking-bad`; upload the optimized file with that public ID to activate it.
+The profile, hero, cursor, Photoshop work, and the car, Memories, and BMW videos are delivered from Cloudinary with automatic quality optimization. The sunset and sea banner images are included as optimized local copies because their original uploads exceeded Cloudinary's image limit. The Breaking Bad video is referenced by the Cloudinary public ID `abhijith-breaking-bad`; upload the optimized file with that public ID to activate it.
 
 Edit `content.js` to add future work. Keep media URLs public and use the existing media structure so the full-size preview and one-video-at-a-time playback continue to work.
 
