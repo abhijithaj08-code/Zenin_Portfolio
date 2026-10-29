@@ -39,8 +39,10 @@
   $('#socials').innerHTML = (data.socials || []).filter(item => item.url).map(item => `<a href="${item.url}" target="_blank" rel="noreferrer">${socialIcon(item.icon)}<span>${safe(item.label)}</span><b>↗</b></a>`).join('');
 
   const loader = $('#pageLoader');
-  window.addEventListener('load', () => setTimeout(() => loader.classList.add('done'), 250), { once: true });
-  setTimeout(() => loader.classList.add('done'), 1600);
+  const finishLoading = () => loader.classList.add('done');
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => setTimeout(finishLoading, 80), { once: true });
+  else setTimeout(finishLoading, 80);
+  setTimeout(finishLoading, 700);
 
   const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('in'); observer.unobserve(entry.target); } }), { threshold: .14 });
   $$('.reveal').forEach(el => observer.observe(el));
