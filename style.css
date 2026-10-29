@@ -25,3 +25,6 @@
 
 
 :root{--muted:#e2b39d;--line:rgba(243,240,233,.25)}body{background:linear-gradient(132deg,#1b0d08 0%,#552016 38%,#9f4020 70%,#d47734 100%);background-attachment:fixed}.site-noise{opacity:.025}
+
+.work-grid{display:block;column-count:3;column-gap:22px;margin-top:80px}.work-card{display:inline-flex;width:100%;margin:0 0 22px;break-inside:avoid;vertical-align:top;min-height:0;height:max-content;padding:24px;background:rgba(16,17,15,.42);color:var(--paper);border:1px solid rgba(243,240,233,.2);box-shadow:0 18px 50px rgba(8,4,2,.22);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transform:none}.work-card:nth-child(2){transform:none}.work-card:hover,.work-card:nth-child(2):hover{transform:translateY(-6px) rotate(-.4deg)}.work-card h3{color:var(--paper)}.work-card p{color:var(--muted)}.work-media{border-radius:16px;background:rgba(16,17,15,.34)}.work-media video,.work-media img{border-radius:16px 16px 0 0}
+@media(max-width:800px){.work-grid{column-count:1;column-gap:0;margin-top:50px}.work-card,.work-card:nth-child(2){display:flex;width:100%;margin:0 0 22px;transform:none}.work-card:hover,.work-card:nth-child(2):hover{transform:translateY(-5px)}}
