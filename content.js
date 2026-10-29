@@ -19,7 +19,7 @@ window.PORTFOLIO = {
   stats: [
     { value: '4', label: 'VIDEO EDITS' },
     { value: '2', label: 'PS PIECES' },
-    { value: '6 mo', label: 'DIPLOMA LEFT' }
+    { value: '✓', label: 'DIPLOMA COMPLETED' }
   ],
   services: [
     { number: '01', title: 'Creative Posters', text: 'Concept posters and image manipulations built from separate visual elements.', tags: 'COMPOSITE · POSTER · RETOUCH' },
