@@ -101,21 +101,7 @@
   if (customCursor && finePointer.matches) {
     document.body.classList.add('has-custom-pointer');
     let clickTimer;
-    let targetX = window.innerWidth / 2;
-    let targetY = window.innerHeight * .32;
-    let glowX = targetX;
-    let glowY = targetY;
-    const animateGlow = () => {
-      glowX += (targetX - glowX) * .045;
-      glowY += (targetY - glowY) * .045;
-      document.documentElement.style.setProperty('--pointer-x', `${glowX}px`);
-      document.documentElement.style.setProperty('--pointer-y', `${glowY}px`);
-      window.requestAnimationFrame(animateGlow);
-    };
-    animateGlow();
     const movePointer = event => {
-      targetX = event.clientX;
-      targetY = event.clientY;
       customCursor.style.left = `${event.clientX}px`;
       customCursor.style.top = `${event.clientY}px`;
       customCursor.classList.remove('is-outside');
